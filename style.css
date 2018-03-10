@@ -1,0 +1,464 @@
+@import url('https://fonts.googleapis.com/css?family=Amaranth:400,700|Josefin+Slab');
+@import "http://fonts.googleapis.com/css?family=Dosis:300,400,500,600,700";
+
+.menu {
+  position: absolute;
+  z-index: 5;     
+  margin-left: 2%;
+  position: fixed;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+}
+.cont-menu{
+  z-index: 1;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+.recuadro{
+  width: 100%;
+}
+#toggle {
+  display: block;                                                                                                                                                                                                                                   
+  width: 28px;
+  height: 40px;
+  margin: 150px auto 0;
+}
+
+#toggle span:after,
+#toggle span:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -9px;
+}
+#toggle span:after{
+  top: 9px;
+}
+#toggle span {
+  position: relative;
+  display: block;
+}
+
+#toggle span,
+#toggle span:after,
+#toggle span:before {
+  width: 40px;
+  height: 5px;
+  background-color: #28a745;
+  transition: all 0.3s;
+  backface-visibility: hidden;
+}
+
+/* on activation */
+#toggle.on span {
+  background-color: transparent;
+}
+#toggle.on span:before {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+#toggle.on span:after {
+  transform: rotate(-45deg) translate(7px, -8px);
+}
+#toggle.on + #menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* menu appearance*/
+#menu {
+  position: relative;
+  width: 100%;
+  padding: 10px;
+  margin: auto;
+  text-align: center;
+  border-radius: 4px;
+  background: white;
+  box-shadow: 0 1px 8px rgba(0,0,0,0.05);
+  /* just for this demo */
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .4s;
+}
+#menu:after {
+  top: -15px;
+  left: 95px;
+  content: "";
+  display: block;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 20px solid white;
+}
+ul, li, li a {
+  list-style: none;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+li a {
+  padding: 5px;
+  color: #888;
+  text-decoration: none;
+  transition: all .2s;
+}
+li a:hover,
+li a:focus {
+  background: #28a745 ;
+  color: #fff;
+}
+
+
+
+ 
+ /*Home*/
+
+
+.seccion-icon{
+  width: 50px;
+}
+
+.Home{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    position: relative;
+}
+.img-head{
+ height: 300px;
+ width: 100%;
+ background-image: url(assets/head.jpg);
+ background-size: 100% 100%;
+ background-attachment: fixed;
+ margin-bottom: 250px;
+}
+.recuadro-perfil {
+    display: flex;
+    background-color: #28a745;
+    position: absolute;
+    margin-top: 150px;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    -webkit-box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
+  -ms-box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.contacto h1 {
+    margin-left: 30px;
+    margin-bottom: 0;
+    color: aliceblue;
+    font-size: 4rem;
+    font-family: 'Amaranth', sans-serif;
+    font-weight: 700;
+}
+.contacto p {
+    margin: 0px 0px 0px 30px;
+    padding: 0;
+    color: aliceblue;
+    font-size: 1rem;
+    font-family: 'Amaranth', sans-serif;
+}
+.contacto h3 {
+    margin-left: 50px;
+    margin-bottom: 50px;
+    padding: 0;
+    color: aliceblue;
+    font-size: 1.5rem;
+    font-family: 'Josefin Slab', serif;
+}
+.icon {
+    margin-right: 10px;
+}
+.icon-redes img{
+ width: 40px;
+ margin: 20px;
+}
+.iconos-redes{
+    margin-left: 10px;
+}
+.fotografia{
+    width: 30%;
+    background-image: url(assets/yo.jpg);
+    background-repeat: no-repeat;
+    background-position-x: 100%; 
+    background-size: 100%;
+}
+.contacto{
+    width: 70%;
+}
+
+/*about*/
+
+
+.card {
+    width: 70%;
+    margin: 0 15% 0 15%;
+    -webkit-box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
+  -ms-box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.card h6 {
+    text-align: left;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 0;
+}
+.card-header h5 {
+    text-align: center;
+    font-family: 'Amaranth', sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 20px;
+    color: #726f77;
+}
+.card-body{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card-text{
+    width: 100%;
+    text-align: justify;
+}
+.card-body a {
+ margin-right: 40px
+}
+.card-title {
+    text-align: center;
+}
+  /*Educacion*/
+
+
+header:after, #timeline .timeline-item:after, header:before, #timeline .timeline-item:before {
+  content: '';
+  display: block;
+  width: 100%;
+  clear: both;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+.Educación {
+  background: #f9f9f9;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  font-family: helvetica, arial, tahoma, verdana;
+  line-height: 20px;
+  font-size: 14px;
+  color: #726f77;
+}
+
+.container {
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+h1, h2, h3, h4 {
+  font-family: "Dosis", arial, tahoma, verdana;
+  font-weight: 500;
+}
+
+.project-name {
+  text-align: center;
+  padding: 10px 0;
+  font-family: 'Amaranth', sans-serif;
+  font-weight: 700;
+  margin-top: 70px;
+  margin-bottom: 50px;
+}
+
+#timeline {
+  width: 100%;
+  margin: 30px auto;
+  position: relative;
+  padding: 0 10px;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+#timeline:before {
+  content: "";
+  width: 3px;
+  height: 100%;
+  background: #28a745;
+  left: 50%;
+  top: 0;
+  position: absolute;
+}
+#timeline:after {
+  content: "";
+  clear: both;
+  display: table;
+  width: 100%;
+}
+#timeline .timeline-item {
+  margin-bottom: 50px;
+  position: relative;
+}
+#timeline .timeline-item .timeline-icon {
+  background: #28a745;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  overflow: hidden;
+  margin-left: -23px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+}
+#timeline .timeline-item .timeline-icon svg {
+  position: relative;
+  top: 14px;
+  left: 14px;
+}
+#timeline .timeline-item .timeline-content {
+  width: 45%;
+  background: #fff;
+  padding: 20px;
+  -webkit-box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
+  -ms-box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+#timeline .timeline-item .timeline-content h2 {
+  padding: 15px;
+  background: #28a745;
+  color: #fff;
+  margin: -20px -20px 0 -20px;
+  font-family: 'Amaranth', sans-serif;
+  font-size: 20px;
+  -webkit-border-radius: 3px 3px 0 0;
+  -moz-border-radius: 3px 3px 0 0;
+  -ms-border-radius: 3px 3px 0 0;
+  border-radius: 3px 3px 0 0;
+}
+#timeline .timeline-item .timeline-content p {
+    margin-top: 10px;
+    margin-bottom: 0;
+    text-align: justify;
+}
+#timeline .timeline-item .timeline-content:before {
+  content: '';
+  position: absolute;
+  left: 45%;
+  top: 20px;
+  width: 0;
+  height: 0;
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-left: 7px solid #28a745;
+}
+#timeline .timeline-item .timeline-content.right {
+  float: right;
+}
+#timeline .timeline-item .timeline-content.right:before {
+  content: '';
+  right: 45%;
+  left: inherit;
+  border-left: 0;
+  border-right: 7px solid #28a745;
+}
+
+
+
+/*skills*/
+
+.skills-div  {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 70%;
+  margin-left: 15%;
+  margin-right: 15%;
+  
+}
+.skills-div h1 {
+  color: #726f77;
+  width: 100%;
+}
+.skills-div .card{
+  margin: 0;
+  width: 30%;
+  text-align: center;
+}
+.progress{
+  margin:10px;
+}
+.card-title-progress {
+  margin: 0;
+  float: 
+}
+.card-body-progress{
+  text-align: left;
+  margin-left: 10px;
+}
+
+.Contacto {
+  margin-bottom: 150px;
+}
+
+@media screen and (max-width: 768px) {
+  .menu{   
+    margin-left: -5%;
+  }
+  #toggle span,
+  #toggle span:after,
+  #toggle span:before {
+    width: 30px;
+  }
+  #timeline {
+    margin: 30px;
+    padding: 0px;
+    width: 90%;
+  }
+  #timeline:before {
+    left: 0;
+  }
+  #timeline .timeline-item .timeline-content {
+    width: 90%;
+    float: right;
+  }
+  #timeline .timeline-item .timeline-content:before, #timeline .timeline-item .timeline-content.right:before {
+    left: 10%;
+    margin-left: -6px;
+    border-left: 0;
+    border-right: 7px solid #28a745;
+  }
+  #timeline .timeline-item .timeline-icon {
+    left: 0;
+  }
+  
+}
